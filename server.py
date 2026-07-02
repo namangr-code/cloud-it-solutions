@@ -5,8 +5,16 @@ import os
 import urllib.parse
 
 PORT = 3000
-PUBLIC_DIR = os.path.join(os.path.dirname(__file__), 'public')
-DATA_DIR = os.path.join(os.path.dirname(__file__), 'data')
+BASE_DIR = os.path.dirname(__file__)
+
+# Fallback to root directory if public/ folder is missing (flat deployment)
+if os.path.exists(os.path.join(BASE_DIR, 'public')):
+    PUBLIC_DIR = os.path.join(BASE_DIR, 'public')
+    DATA_DIR = os.path.join(BASE_DIR, 'data')
+else:
+    PUBLIC_DIR = BASE_DIR
+    DATA_DIR = BASE_DIR
+
 ASSESSMENTS_FILE = os.path.join(DATA_DIR, 'assessments.json')
 
 # Setup directories
