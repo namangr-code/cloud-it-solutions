@@ -15,8 +15,16 @@ import os
 import urllib.parse
 
 PORT = 3000
-PUBLIC_DIR = os.path.join(os.path.dirname(__file__), 'public')
-DATA_DIR = os.path.join(os.path.dirname(__file__), 'data')
+BASE_DIR = os.path.dirname(__file__)
+
+# Fallback to root directory if public/ folder is missing (flat deployment)
+if os.path.exists(os.path.join(BASE_DIR, 'public')):
+    PUBLIC_DIR = os.path.join(BASE_DIR, 'public')
+    DATA_DIR = os.path.join(BASE_DIR, 'data')
+else:
+    PUBLIC_DIR = BASE_DIR
+    DATA_DIR = BASE_DIR
+
 ASSESSMENTS_FILE = os.path.join(DATA_DIR, 'assessments.json')
 
 # Setup directories
@@ -1302,8 +1310,8 @@ footer p {
 
   <main>
     <section class="hero">
-      <h1>Enhancing Small Business Efficiency through Cloud Solutions</h1>
-      <p>Transform your small enterprise with scalable, cost-effective, and secure cloud integration. Evaluate IaaS, PaaS, and SaaS, calculate your ROI, and build a tailored integration roadmap today.</p>
+      <h1>Cloud IT for Small Business</h1>
+      <p>Optimize your budget, streamline daily operations, and generate your custom integration roadmap in minutes.</p>
       <div style="display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap;">
         <a href="assessment.html" class="btn btn-primary"><i class="fa-solid fa-clipboard-question"></i> Take Cloud Assessment</a>
         <a href="calculator.html" class="btn btn-secondary"><i class="fa-solid fa-calculator"></i> Calculate Cost Savings</a>
@@ -1312,7 +1320,7 @@ footer p {
 
     <h2 style="text-align: center; margin-bottom: 1rem;">Project Objectives</h2>
     <p style="text-align: center; max-width: 700px; margin: 0 auto 3rem; color: var(--text-secondary);">
-      Understanding and evaluating the operational benefits, economic impacts, and adoption challenges of cloud technologies for small business agility.
+      Evaluate cloud tools, analyze cost-effectiveness, and plan integration paths to boost business flexibility.
     </p>
 
     <div class="card-grid">
@@ -1336,8 +1344,7 @@ footer p {
 
   <footer>
     <div class="nav-container" style="flex-direction: column; gap: 1rem;">
-      <p>© 2026 CloudIT Project. Enhancing Small Business Efficiency through Cloud-Based IT Solutions.</p>
-      <p style="font-size: 0.75rem;">Developed for business digitalization research & implementation roadmap planning.</p>
+      <p>© 2026 CloudIT Project. Streamlining Small Business Operations.</p>
     </div>
   </footer>
 
