@@ -1,0 +1,178 @@
+[
+  {
+    "id": "asm_356302",
+    "timestamp": "2026-07-03T01:16:20.675968",
+    "businessName": "Test Business",
+    "industry": "retail",
+    "size": "small",
+    "budget": "medium",
+    "securityImportance": "critical",
+    "techExpertise": "low",
+    "currentTools": [
+      "excel",
+      "paper"
+    ],
+    "painPoints": [
+      "collaboration",
+      "accounting"
+    ],
+    "recommendations": {
+      "primaryServiceTypes": [
+        "SaaS (Software as a Service)"
+      ],
+      "detailedRecommendations": [
+        {
+          "category": "Collaboration & Productivity",
+          "solutions": [
+            "Google Workspace",
+            "Microsoft 365"
+          ],
+          "reason": "Replaces offline file storage and paper documents with unified email, storage, and real-time document editing."
+        },
+        {
+          "category": "Accounting & Finance",
+          "solutions": [
+            "QuickBooks Online",
+            "Zoho Books"
+          ],
+          "reason": "Automates bookkeeping, invoice distribution, and provides cloud ledger access for tax compliance."
+        }
+      ],
+      "securityRoadmap": [
+        "Enforce Multi-Factor Authentication (MFA) across all email and data providers.",
+        "Enforce Role-Based Access Controls (RBAC) to block unauthorized file sharing.",
+        "Set up automatic weekly cloud data backup snapshots with strict encryption.",
+        "Organize cyber security training sessions for employees."
+      ],
+      "budgetTips": [
+        "Commit to annual subscription agreements to save up to 20% on software fees.",
+        "Utilize serverless functions (like AWS Lambda) to charge strictly on application requests.",
+        "Employ a dedicated implementation specialist to avoid costly setup mistakes."
+      ],
+      "roadmapSteps": [
+        {
+          "phase": "Phase 1: Assessment & Strategy (Weeks 1-2)",
+          "actions": [
+            "Audit all existing excel, paper resources.",
+            "Assign a migration coordinator to oversee project phases."
+          ]
+        },
+        {
+          "phase": "Phase 2: Core SaaS Integration (Weeks 3-6)",
+          "actions": [
+            "Integrate Google Workspace for collaboration & productivity.",
+            "Integrate QuickBooks Online for accounting & finance.",
+            "Configure security layers and identity protections (MFA)."
+          ]
+        },
+        {
+          "phase": "Phase 3: Workload Migration (Weeks 7-12)",
+          "actions": [
+            "Coordinate bulk document uploads to cloud-backed drives.",
+            "Initiate beta trials with select staff to fine-tune system configurations."
+          ]
+        },
+        {
+          "phase": "Phase 4: Management & Cost Auditing (Ongoing)",
+          "actions": [
+            "Enforce Multi-Factor Authentication (MFA) across all email and data providers.",
+            "Enforce Role-Based Access Controls (RBAC) to block unauthorized file sharing.",
+            "Set up automatic weekly cloud data backup snapshots with strict encryption.",
+            "Organize cyber security training sessions for employees.",
+            "Commit to annual subscription agreements to save up to 20% on software fees.",
+            "Utilize serverless functions (like AWS Lambda) to charge strictly on application requests.",
+            "Employ a dedicated implementation specialist to avoid costly setup mistakes."
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "asm_192571",
+    "timestamp": "2026-07-03T01:24:40.839480",
+    "businessName": "Test Business",
+    "industry": "retail",
+    "size": "small",
+    "budget": "medium",
+    "securityImportance": "critical",
+    "techExpertise": "low",
+    "currentTools": [
+      "excel",
+      "paper"
+    ],
+    "painPoints": [
+      "collaboration",
+      "accounting"
+    ],
+    "recommendations": {
+      "primaryServiceTypes": [
+        "SaaS (Software as a Service)"
+      ],
+      "detailedRecommendations": [
+        {
+          "category": "Collaboration & Productivity",
+          "solutions": [
+            "Google Workspace",
+            "Microsoft 365"
+          ],
+          "reason": "Replaces offline file storage and paper documents with unified email, storage, and real-time document editing."
+        },
+        {
+          "category": "Accounting & Finance",
+          "solutions": [
+            "QuickBooks Online",
+            "Zoho Books"
+          ],
+          "reason": "Automates bookkeeping, invoice distribution, and provides cloud ledger access for tax compliance."
+        }
+      ],
+      "securityRoadmap": [
+        "Enforce Multi-Factor Authentication (MFA) across all email and data providers.",
+        "Enforce Role-Based Access Controls (RBAC) to block unauthorized file sharing.",
+        "Set up automatic weekly cloud data backup snapshots with strict encryption.",
+        "Organize cyber security training sessions for employees."
+      ],
+      "budgetTips": [
+        "Commit to annual subscription agreements to save up to 20% on software fees.",
+        "Utilize serverless functions (like AWS Lambda) to charge strictly on application requests.",
+        "Employ a dedicated implementation specialist to avoid costly setup mistakes."
+      ],
+      "roadmapSteps": [
+        {
+          "phase": "Phase 1: Assessment & Strategy (Weeks 1-2)",
+          "actions": [
+            "Audit all existing excel, paper resources.",
+            "Assign a migration coordinator to oversee project phases."
+          ]
+        },
+        {
+          "phase": "Phase 2: Core SaaS Integration (Weeks 3-6)",
+          "actions": [
+            "Integrate Google Workspace for collaboration & productivity.",
+            "Integrate QuickBooks Online for accounting & finance.",
+            "Configure security layers and identity protections (MFA)."
+          ]
+        },
+        {
+          "phase": "Phase 3: Workload Migration (Weeks 7-12)",
+          "actions": [
+            "Coordinate bulk document uploads to cloud-backed drives.",
+            "Initiate beta trials with select staff to fine-tune system configurations."
+          ]
+        },
+        {
+          "phase": "Phase 4: Management & Cost Auditing (Ongoing)",
+          "actions": [
+            "Enforce Multi-Factor Authentication (MFA) across all email and data providers.",
+            "Enforce Role-Based Access Controls (RBAC) to block unauthorized file sharing.",
+            "Set up automatic weekly cloud data backup snapshots with strict encryption.",
+            "Organize cyber security training sessions for employees.",
+            "Commit to annual subscription agreements to save up to 20% on software fees.",
+            "Utilize serverless functions (like AWS Lambda) to charge strictly on application requests.",
+            "Employ a dedicated implementation specialist to avoid costly setup mistakes."
+          ]
+        }
+      ]
+    }
+  }
+]

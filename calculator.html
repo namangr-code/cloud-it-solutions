@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ROI Calculator - CloudIT</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <i class="fa-solid fa-cloud"></i> Cloud<span>IT</span>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="comparison.html">Services</a></li>
+          <li><a href="calculator.html">Cost ROI</a></li>
+          <li><a href="assessment.html">Assessment</a></li>
+          <li><a href="case-studies.html">Case Studies</a></li>
+          <li><a href="literature.html">Literature</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div style="margin-bottom: 3rem; text-align: center;">
+      <h2>On-Premises vs. Cloud ROI Calculator</h2>
+      <p style="max-width: 700px; margin: 0 auto;">Estimate potential cost savings over 3 years. Drag the sliders below to reflect your current physical server costs versus planned cloud subscription models.</p>
+    </div>
+
+    <div class="calculator-layout">
+      <!-- Input Controls -->
+      <div class="calc-panel">
+        <h3>Operational Variables</h3>
+        <p style="margin-bottom: 1.5rem; font-size: 0.85rem; color: var(--text-muted);">Adjust variables to calculate cumulative infrastructure budgets.</p>
+
+        <div class="control-group">
+          <label for="calc-onprem-hardware">On-Premises Server Purchase (One-time) <span id="val-onprem-hardware">$5,000</span></label>
+          <input type="range" id="calc-onprem-hardware" class="slider-input" min="0" max="30000" step="500" value="5000">
+        </div>
+
+        <div class="control-group">
+          <label for="calc-onprem-maint">Annual IT Support & Maintenance <span id="val-onprem-maint">$2,000</span></label>
+          <input type="range" id="calc-onprem-maint" class="slider-input" min="0" max="15000" step="250" value="2000">
+        </div>
+
+        <div class="control-group">
+          <label for="calc-downtime-cost">Estimated Annual Outage Loss <span id="val-downtime-cost">$1,500</span></label>
+          <input type="range" id="calc-downtime-cost" class="slider-input" min="0" max="10000" step="100" value="1500">
+        </div>
+
+        <div class="control-group">
+          <label for="calc-cloud-sub">Target Cloud Subscriptions (Monthly) <span id="val-cloud-sub">$150</span></label>
+          <input type="range" id="calc-cloud-sub" class="slider-input" min="10" max="1500" step="10" value="150">
+        </div>
+      </div>
+
+      <!-- Live Calculations & Chart -->
+      <div class="chart-panel">
+        <h3>3-Year Financial Comparison</h3>
+        <div style="flex-grow: 1; margin: 1.5rem 0; min-height: 250px;">
+          <canvas id="roiChart"></canvas>
+        </div>
+        
+        <div class="metric-grid">
+          <div class="metric-card">
+            <div class="metric-value" id="metric-onprem-total">$15,500</div>
+            <div class="metric-label">Total On-Premises</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-value" id="metric-cloud-total">$6,150</div>
+            <div class="metric-label">Total Cloud Cost</div>
+          </div>
+          <div class="metric-card" style="grid-column: span 2; background: rgba(16, 185, 129, 0.08); border-color: rgba(16, 185, 129, 0.2);">
+            <div class="metric-value savings" id="metric-savings-net">+$9,350</div>
+            <div class="metric-label" style="color: var(--color-success);">Net Cost Savings</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="nav-container" style="flex-direction: column; gap: 1rem;">
+      <p>© 2026 CloudIT Project. Enhancing Small Business Efficiency through Cloud-Based IT Solutions.</p>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Service Comparison - CloudIT</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <i class="fa-solid fa-cloud"></i> Cloud<span>IT</span>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="comparison.html">Services</a></li>
+          <li><a href="calculator.html">Cost ROI</a></li>
+          <li><a href="assessment.html">Assessment</a></li>
+          <li><a href="case-studies.html">Case Studies</a></li>
+          <li><a href="literature.html">Literature</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div style="margin-bottom: 3rem; text-align: center;">
+      <h2>Evaluating Cloud Service Models</h2>
+      <p style="max-width: 700px; margin: 0 auto;">Different business needs call for different levels of control, management, and flexibility. Learn which model matches your company's operational profile.</p>
+    </div>
+
+    <div class="comp-tabs">
+      <button class="tab-btn active" data-tab="saas">SaaS (Software as a Service)</button>
+      <button class="tab-btn" data-tab="paas">PaaS (Platform as a Service)</button>
+      <button class="tab-btn" data-tab="iaas">IaaS (Infrastructure as a Service)</button>
+    </div>
+
+    <div class="tab-content">
+      <!-- SaaS -->
+      <div id="saas" class="tab-pane active">
+        <h3>Software as a Service (SaaS)</h3>
+        <p style="margin-bottom: 1.5rem;">Fully managed software applications accessible over the web. Perfect for general business functions where custom programming is not required.</p>
+        
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 1rem;">
+          <div>
+            <h4 style="color: var(--color-secondary); margin-bottom: 0.5rem;">Key Benefits for Small Business</h4>
+            <ul style="padding-left: 1.2rem; margin-bottom: 1rem;">
+              <li>Zero installation or infrastructure setup.</li>
+              <li>Subscription-based billing (Opex instead of Capex).</li>
+              <li>Vendor handles updates, security patches, and backups automatically.</li>
+            </ul>
+          </div>
+          <div>
+            <h4 style="color: var(--color-secondary); margin-bottom: 0.5rem;">Common Examples</h4>
+            <p>Google Workspace, Microsoft 365, QuickBooks Online, Zoho Suite, Slack, Salesforce.</p>
+          </div>
+        </div>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Business Function</th>
+              <th>SaaS Tool</th>
+              <th>Efficiency Improvement</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Communication & Team Collab</td>
+              <td>Google Workspace / Teams</td>
+              <td>Real-time document co-authoring, reduced internal emails, unified video conferencing.</td>
+            </tr>
+            <tr>
+              <td>Accounting & Finance</td>
+              <td>QuickBooks Online / Zoho Books</td>
+              <td>Automated invoice tracking, receipt scanning, and instantly updated bank reconciliation.</td>
+            </tr>
+            <tr>
+              <td>CRM & Customer Support</td>
+              <td>Zoho CRM / Salesforce Essentials</td>
+              <td>Centralized customer histories, automated follow-ups, and customer pipeline forecasting.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- PaaS -->
+      <div id="paas" class="tab-pane">
+        <h3>Platform as a Service (PaaS)</h3>
+        <p style="margin-bottom: 1.5rem;">Provides a cloud environment to build, deploy, and manage custom applications without worrying about OS management, networking, or servers.</p>
+        
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 1rem;">
+          <div>
+            <h4 style="color: var(--color-secondary); margin-bottom: 0.5rem;">Key Benefits for Small Business</h4>
+            <ul style="padding-left: 1.2rem; margin-bottom: 1rem;">
+              <li>Allows developers to focus strictly on coding application logic.</li>
+              <li>Built-in scaling mechanisms to handle spikes in customer usage.</li>
+              <li>Reduces development complexity and time-to-market.</li>
+            </ul>
+          </div>
+          <div>
+            <h4 style="color: var(--color-secondary); margin-bottom: 0.5rem;">Common Examples</h4>
+            <p>Heroku, Render, AWS Elastic Beanstalk, Google App Engine.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- IaaS -->
+      <div id="iaas" class="tab-pane">
+        <h3>Infrastructure as a Service (IaaS)</h3>
+        <p style="margin-bottom: 1.5rem;">Provides virtualized computing resources (servers, storage, firewalls, and networks) over the internet. You have complete control over OS configurations and databases.</p>
+        
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 1rem;">
+          <div>
+            <h4 style="color: var(--color-secondary); margin-bottom: 0.5rem;">Key Benefits for Small Business</h4>
+            <ul style="padding-left: 1.2rem; margin-bottom: 1rem;">
+              <li>Highest level of control and configuration flexibility.</li>
+              <li>Ability to run legacy desktop software in secure cloud environments (e.g., Windows VMs).</li>
+              <li>Only pay for exact raw compute/hour resources used.</li>
+            </ul>
+          </div>
+          <div>
+            <h4 style="color: var(--color-secondary); margin-bottom: 0.5rem;">Common Examples</h4>
+            <p>Amazon Web Services (AWS EC2/S3), Microsoft Azure, Google Cloud Engine, DigitalOcean.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="nav-container" style="flex-direction: column; gap: 1rem;">
+      <p>© 2026 CloudIT Project. Enhancing Small Business Efficiency through Cloud-Based IT Solutions.</p>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

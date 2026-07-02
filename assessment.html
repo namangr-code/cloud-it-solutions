@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cloud Assessment - CloudIT</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <i class="fa-solid fa-cloud"></i> Cloud<span>IT</span>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="comparison.html">Services</a></li>
+          <li><a href="calculator.html">Cost ROI</a></li>
+          <li><a href="assessment.html">Assessment</a></li>
+          <li><a href="case-studies.html">Case Studies</a></li>
+          <li><a href="literature.html">Literature</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div style="margin-bottom: 3rem; text-align: center;">
+      <h2>Interactive Cloud Readiness Assessment</h2>
+      <p style="max-width: 700px; margin: 0 auto;">Determine your organization's cloud suitability. Submit your current operations, pain points, and technical background to build a tailored cloud integration roadmap.</p>
+    </div>
+
+    <section class="form-section">
+      <form id="cloud-assessment-form">
+        <!-- Business Profile -->
+        <h3 style="border-bottom: 1px solid var(--glass-border); padding-bottom: 0.5rem; margin-bottom: 1.5rem; color: var(--color-secondary);">1. Business Profile</h3>
+        
+        <div class="form-group">
+          <label for="biz-name">Business Name</label>
+          <input type="text" id="biz-name" class="input-text" placeholder="e.g. Acme Retailers" required>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 2rem;">
+          <div class="form-group">
+            <label for="biz-industry">Industry Sector</label>
+            <select id="biz-industry" required>
+              <option value="">Select industry...</option>
+              <option value="retail">Retail & E-commerce</option>
+              <option value="professional">Professional Services (Consulting, Law, etc)</option>
+              <option value="manufacturing">Manufacturing & Logistics</option>
+              <option value="healthcare">Healthcare & Medical</option>
+              <option value="education">Education & Non-Profit</option>
+            </select>
+          </div>
+          
+          <div class="form-group">
+            <label for="biz-size">Number of Employees</label>
+            <select id="biz-size" required>
+              <option value="micro">Micro (1-9 employees)</option>
+              <option value="small" selected>Small (10-49 employees)</option>
+              <option value="medium">Medium (50-249 employees)</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Tech Maturity -->
+        <h3 style="border-bottom: 1px solid var(--glass-border); padding-bottom: 0.5rem; margin-bottom: 1.5rem; color: var(--color-secondary);">2. Technical Maturity & Budget</h3>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 2rem;">
+          <div class="form-group">
+            <label for="biz-budget">Monthly Cloud Budget Range</label>
+            <select id="biz-budget" required>
+              <option value="low">Low (Under $200/month)</option>
+              <option value="medium" selected>Moderate ($200 - $1,000/month)</option>
+              <option value="high">High ($1,000+/month)</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="biz-tech">Internal Technical Expertise</label>
+            <select id="biz-tech" required>
+              <option value="low">Low (Non-technical staff only)</option>
+              <option value="medium" selected>Moderate (Some IT/Admin experience)</option>
+              <option value="high">High (Dedicated IT Staff / Developers)</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="biz-security">Data Security & Compliance Requirement Level</label>
+          <select id="biz-security" required>
+            <option value="standard">Standard (General data protection)</option>
+            <option value="critical">Critical (Financial data, health files, strict privacy policies)</option>
+          </select>
+        </div>
+
+        <!-- Infrastructure State -->
+        <h3 style="border-bottom: 1px solid var(--glass-border); padding-bottom: 0.5rem; margin-bottom: 1.5rem; color: var(--color-secondary);">3. Current Systems & Operational Pain Points</h3>
+
+        <div class="form-group">
+          <label>Common Legacy Systems Used (Select all that apply)</label>
+          <div class="options-grid">
+            <div class="option-card">
+              <input type="checkbox" id="tool-excel" name="current-tools" value="excel">
+              <label for="tool-excel" class="option-label">Offline Excel / Word</label>
+            </div>
+            <div class="option-card">
+              <input type="checkbox" id="tool-server" name="current-tools" value="server">
+              <label for="tool-server" class="option-label">On-Premises Local Server</label>
+            </div>
+            <div class="option-card">
+              <input type="checkbox" id="tool-paper" name="current-tools" value="paper">
+              <label for="tool-paper" class="option-label">Paper records / files</label>
+            </div>
+            <div class="option-card">
+              <input type="checkbox" id="tool-basic-hosting" name="current-tools" value="basic-hosting">
+              <label for="tool-basic-hosting" class="option-label">Shared Shared Web Hosting</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Target Business Pain Points (Select all that apply)</label>
+          <div class="options-grid">
+            <div class="option-card">
+              <input type="checkbox" id="pain-collaboration" name="pain-points" value="collaboration">
+              <label for="pain-collaboration" class="option-label">Poor Collaboration / Remote Work</label>
+            </div>
+            <div class="option-card">
+              <input type="checkbox" id="pain-accounting" name="pain-points" value="accounting">
+              <label for="pain-accounting" class="option-label">Manual Accounting & Invoicing</label>
+            </div>
+            <div class="option-card">
+              <input type="checkbox" id="pain-crm" name="pain-points" value="crm">
+              <label for="pain-crm" class="option-label">Customer tracking issues</label>
+            </div>
+            <div class="option-card">
+              <input type="checkbox" id="pain-hosting" name="pain-points" value="hosting">
+              <label for="pain-hosting" class="option-label">Unreliable local app hosting</label>
+            </div>
+          </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 3rem;">
+          <button type="submit" class="btn btn-primary" style="width: 100%; max-width: 300px;"><i class="fa-solid fa-wand-magic-sparkles"></i> Generate Custom Roadmap</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="nav-container" style="flex-direction: column; gap: 1rem;">
+      <p>© 2026 CloudIT Project. Enhancing Small Business Efficiency through Cloud-Based IT Solutions.</p>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
